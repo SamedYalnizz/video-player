@@ -35,6 +35,7 @@ function togglePlay() {
 // Update Progress as the video plays
 
 function updateProgress(){
+    progressBar.style.width = `${(video.currentTime/video.duration)*100}%`;
     console.log("current Time: ", video.currentTime, "duration: ", video.duration);
 }
 
